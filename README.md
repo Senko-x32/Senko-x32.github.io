@@ -1,1 +1,0 @@
-# senko.github.io
