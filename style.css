@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+#top{
+    color: wheat;
+    border-radius: 50%;
+    width: 50%;
+    text-align: center;
+    object-position: center;
+    margin: auto;
+    display: flexbox;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: wheat;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+#grid{
+    background-color: rgb(7, 7, 7);
+    object-position: center;
+    width: 50%;
+    margin: auto;
+    display: flexbox;
+}
+
+#info {
+    color: wheat;
+    object-position: center;
+}
