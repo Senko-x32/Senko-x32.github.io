@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,30 +9,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+<body>
 
-        <br>
-        <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="Library/Library.html" class="dropbtn">Library</a>
+            <div class="dropdown-content">
+                <a href="Library/Books/Books.html">Books</a>
+                <a href="Library/TV/TV.html">TV/Shows</a>
+                <a href="Library/Games/Games.html">Games</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="Projects/Projects.html" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="Projects/Coding/Coding.html">Coding</a>
+                <a href="Projects/Networking/Networking.html">Networking</a>
+            </div>
+        </li>
+    </ul>
+    
+ 
 
-        <div id="top">
-            <img id="top" src="Resources/blue-lain.gif" alt="pfp">
-            <h1>Senko</h1>
+        <div id="container">
+            <div id="img">
+                <h1>Senko</h1>
+                <img src="assets/blue-lain.gif" height="70%" width="80%">
+            </div>
+
+            <br>
+
+            <div id="bio">
+                <p>I'm a technology enthusiast working on different projects that vary from programming to pretending to be a sysadmin. Look around my website for my projects or interests, I have and feel free to reach out.</p>
+            </div>
         </div>
-
-        <div id="grid">
-            <h2 id="info">Interest / Hobbies</h2>
-            
-            <p id="info"><b>* System Administraion</b></p>
-            <p id="info">I have setup my own homelab using proxmox. Inside of that I run multiple services like TrueNAS for storage, Dolphin for streaming, PiHole for ads, etc...</p>
-            <p id="info"><b>* Programmer</b></p>
-            <p id="info">I started being interested when I was little trying to understand how website are built and ran. Throughout the years afterwards I started learning python and some C.</p>
-            <p id="info"><b>* Languages</b></p>
-            <p id="info">My primary langauge is english but when I was younger teen Russian culture and langauge got my attention.</p>
-        </div>
+        
     </body>
+
+    <footer>
+        
+    </footer>
 </html>

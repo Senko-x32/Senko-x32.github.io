@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers children horizontally */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgb(29, 29, 29);
+    width: 50%;       /* default width on large screens */
+    min-width: 250px; /* ensures container isn’t too small */
+    border-radius: 5%;
+    color: wheat;
+    margin: 20px 0;   /* spacing between containers */
+    text-align: center;
+    box-sizing: border-box; /* includes padding in width */
+    padding: 10px;
+}
+
+#bio {
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    color: wheat;
+    padding: 10px;
+}
+
+#code {
+    background-color: rgb(44, 44, 44);
+    color: wheat;
+    padding: 10px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+/* Navbar styling remains the same */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(43, 43, 43);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #272727;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: wheat;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1f1f1f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}

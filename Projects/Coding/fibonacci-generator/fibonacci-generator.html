@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fibonacci-generator.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="../../../Library/Library.html" class="dropbtn">Library</a>
+            <div class="dropdown-content">
+                <a href="../../../Library/Books/Books.html">Books</a>
+                <a href="../../../Library/TV/TV.html">TV/Shows</a>
+                <a href="../../../Library/Games/Games.html">Games</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../../Projects.html" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="../Coding.html">Coding</a>
+                <a href="../../Networking/Networking.html">Networking</a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="container">
+        <div id="bio">
+            <h1>Fibonacci Generator</h1>
+            <p>I made this because I was looking for projects to work on so I can get better at C and saw some youtubers make this so I thought to give it a shot.</p>    
+            <br>
+            <br>
+            <p>Code down below</p>
+            <div id="code">
+            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+        
+int a = 1;
+int b = 0;
+
+int main() {
+    for (;;) {
+        int c = a + b;
+        b = a;
+        a = c;
+        printf("\n%d", c);
+        sleep(1);
+    }
+}
+            </code></pre>
+</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

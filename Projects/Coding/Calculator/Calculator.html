@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="../../../Library/Library.html" class="dropbtn">Library</a>
+            <div class="dropdown-content">
+                <a href="../../../Library/Books/Books.html">Books</a>
+                <a href="../../../Library/TV/TV.html">TV/Shows</a>
+                <a href="../../../Library/Games/Games.html">Games</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../../Projects.html" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="../Coding.html">Coding</a>
+                <a href="../../Networking/Networking.html">Networking</a>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="container">
+        <div id="bio">
+            <h1>Calculator</h1>
+            <p>This is the first ever thing I made in C. Over time I slightly adjusted it since I find working on projects the easist way to learn a programming langauge.</p>    
+            <br>
+            <br>
+            <p>Code down below</p>
+            <div id="code">
+            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+
+void clear_screen() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+void add(int a, int b){
+    int c;
+    c = a + b;
+    printf("\nresult: %d\n", c);
+}
+
+void sub(int a, int b){
+    int c;
+    c = a - b;
+    printf("\nresult: %d\n", c);
+}
+
+void divide(int a, int b){
+    int c;
+    c = a / b;
+    printf("\nresult: %d\n", c);
+}
+
+void multiply(int a, int b){
+    int c;
+    c = a * b;
+    printf("\nresult: %d\n", c);
+}
+
+int banner(){
+
+    printf("\n1. add");
+    printf("\n2. subtract");
+    printf("\n3. multiply");
+    printf("\n4. divide");
+
+}
+
+int options(){
+    
+    while (1){
+        int opt, a, b;
+
+        banner();
+
+        printf("\nEnter option: ");
+        scanf("%d", &opt);
+
+        printf("\nEnter your first number: ");
+        scanf("%d", &a);
+
+        printf("\nEnter your second number: ");
+        scanf("%d", &b);
+
+        switch (opt){
+            case 1:
+                add(a,b);
+                break;
+            case 2:
+                sub(a,b);
+                break;
+            case 3:
+                multiply(a,b);
+                break;
+            case 4:
+                divide(a,b);
+                break;
+            default:
+                printf("error");
+        }
+    }
+    
+    
+}
+
+
+int main(){
+    clear_screen();
+    options();
+    return 0;
+}
+
+            </code></pre>
+</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
