@@ -81,7 +81,6 @@
             color: wheat;
         }
 
-        /* ===== Responsive Media Queries ===== */
         @media (max-width: 1024px) {
             #container {
                 width: 40%;

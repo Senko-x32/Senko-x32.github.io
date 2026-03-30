@@ -1,30 +1,28 @@
-/* ===== General Body Styling ===== */
 body {
     background-color: rgb(19, 19, 19);
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers containers horizontally */
+    align-items: center; 
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* ===== Container for Content ===== */
 .container {
     background-color: rgb(29, 29, 29);
-    width: 25%;       /* default width on large screens */
-    max-width: 400px; /* prevents container from getting too wide */
-    min-width: 250px; /* ensures container isn’t too small */
+    width: 25%;     
+    max-width: 400px; 
+    min-width: 250px; 
     border-radius: 5%;
     color: wheat;
-    margin: 20px 0;   /* spacing between containers */
-    box-sizing: border-box; /* includes padding in width */
+    margin: 20px 0;   
+    box-sizing: border-box; 
     padding: 20px;
     display: flex;
-    flex-direction: column; /* vertical stacking */
+    flex-direction: column;
     align-items: center;
 }
 
-/* ===== Bio Section Inside Container ===== */
+
 #bio {
     background-color: rgb(36, 36, 36);
     text-align: center;
@@ -35,13 +33,12 @@ body {
 }
 
 #bio ul {
-    list-style-type: disc; /* vertical bullet points */
+    list-style-type: disc; 
     padding-left: 20px;
-    text-align: left; /* align items left inside container */
+    text-align: left; 
     margin-top: 10px;
 }
 
-/* ===== Navbar Styling ===== */
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -51,7 +48,6 @@ ul.navbar {
     width: 100%;
 }
 
-/* Only navbar list items float left */
 ul.navbar li {
     float: left;
 }
@@ -97,7 +93,6 @@ li.dropdown {
     display: block;
 }
 
-/* ===== Responsive Media Queries ===== */
 @media (max-width: 1024px) {
     .container {
         width: 40%;

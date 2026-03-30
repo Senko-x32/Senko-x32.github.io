@@ -1,114 +1,110 @@
  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            background-color: rgb(19, 19, 19);
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* centers content horizontally */
-            font-family: Arial, sans-serif;
-        }
+body {
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
 
-        /* Navigation bar */
-        ul {
-            list-style-type: none;
-            width: 100%;
-            background-color: #222222;
-            display: flex;
-            padding: 0;
-            margin: 0;
-            position: fixed; /* stick to top */
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
+ul {
+    list-style-type: none;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
-        li {
-            float: left;
-        }
+li {
+    float: left;
+}
 
-        li a, .dropbtn {
-            display: inline-block;
-            color: wheat;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+li a, .dropbtn {
+    display: inline-block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: rgb(43, 43, 43);
-        }
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(43, 43, 43);
+}
 
-        li.dropdown {
-            display: inline-block;
-        }
+li.dropdown {
+    display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #272727;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #272727;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-        .dropdown-content a {
-            color: wheat;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+.dropdown-content a {
+    color: wheat;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #1f1f1f;
-        }
+.dropdown-content a:hover {
+    background-color: #1f1f1f;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        /* Add space below nav bar so content doesn't go under it */
-        .spacer {
-            height: 48px; /* same as nav height */
-        }
+.spacer {
+    height: 48px; 
+}
 
-        /* Container row */
-        .container-row {
-            display: flex;
-            justify-content: center; /* centers containers horizontally */
-            gap: 20px; /* space between containers */
-            margin-top: 20px;
-            flex-wrap: wrap; /* allows wrapping on smaller screens */
-        }
+.container-row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
 
-        /* Container */
-        .container {
-            background-color: rgb(29, 29, 29);
-            width: 300px; 
-            border-radius: 5%;
-            color: wheat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+.container {
+    background-color: rgb(29, 29, 29);
+    width: 300px; 
+    border-radius: 5%;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-        .bio {
-            background-color: rgb(36, 36, 36);
-            text-align: center;
-            color: wheat;
-            width: 100%;
-            padding: 10px;
-            border-radius: 5%;
-        }
+.bio {
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    color: wheat;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5%;
+}
 
-        @media (max-width: 650px) {
-            .container {
-                width: 90%; 
-            }
-        }
+@media (max-width: 650px) {
+    .container {
+        width: 90%; 
+    }
+}

@@ -2,21 +2,21 @@ body {
     background-color: rgb(19, 19, 19);
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers children horizontally */
+    align-items: center; 
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
     background-color: rgb(29, 29, 29);
-    width: 25%;       /* default width on large screens */
-    max-width: 400px; /* prevents container from getting too wide */
-    min-width: 250px; /* ensures container isn’t too small */
+    width: 25%;       
+    max-width: 400px; 
+    min-width: 250px; 
     border-radius: 5%;
     color: wheat;
-    margin: 20px 0;   /* spacing between containers */
+    margin: 20px 0; 
     text-align: center;
-    box-sizing: border-box; /* includes padding in width */
+    box-sizing: border-box; 
     padding: 10px;
 }
 
@@ -27,7 +27,7 @@ body {
     padding: 10px;
 }
 
-/* Navbar styling remains the same */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -82,7 +82,6 @@ li.dropdown {
     display: block;
 }
 
-/* ===== Responsive Media Queries ===== */
 @media (max-width: 1024px) {
     .container {
         width: 40%;
