@@ -92,20 +92,37 @@ li.dropdown {
     display: block;
 }
 
+footer {
+    background-color: #1f1f1f;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer img {
+    max-width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
 @media (max-width: 1024px) {
-    .container {
-        width: 50%;
+    #container {
+        width: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    .container {
+    #container {
         width: 60%;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
+    #container {
         width: 90%;
+    }
+
+    footer img {
+        max-width: 40px;
     }
 }

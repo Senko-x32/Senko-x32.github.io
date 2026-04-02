@@ -1,100 +1,123 @@
- body {
-            background-color: rgb(19, 19, 19);
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: wheat;
-        }
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 19, 19);
+    font-family: Arial, sans-serif;
+    color: wheat;
+}
 
-        /* ===== Navigation Bar ===== */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #222222;
-            width: 100%;
-        }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+    width: 100%;
+}
 
-        li {
-            float: left;
-        }
+li {
+    float: left;
+}
 
-        li a, .dropbtn {
-            display: inline-block;
-            color: wheat;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+li a, .dropbtn {
+    display: inline-block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: rgb(43, 43, 43);
-        }
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(43, 43, 43);
+}
 
-        li.dropdown {
-            display: inline-block;
-        }
+li.dropdown {
+    display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #272727;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #272727;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-        .dropdown-content a {
-            color: wheat;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+.dropdown-content a {
+    color: wheat;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #1f1f1f;
-        }
+.dropdown-content a:hover {
+    background-color: #1f1f1f;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        /* ===== Main Container ===== */
-        #container {
-            margin: 20px auto;
-            justify-content: center;
-            background-color: rgb(29, 29, 29);
-            width: 30%;
-            border-radius: 5%;
-            text-align: center;
-        }
+#container {
+    margin: 20px auto;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    width: 30%;
+    border-radius: 5%;
+    text-align: center;
+    flex: 1; 
+}
 
-        #img h1 {
-            margin: 10px 0;
-        }
+#img h1 {
+    margin: 10px 0;
+}
 
-        #bio {
-            background-color: rgb(36, 36, 36);
-            padding: 10px;
-            color: wheat;
-        }
+#bio {
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+    color: wheat;
+}
 
-        @media (max-width: 1024px) {
-            #container {
-                width: 40%;
-            }
-        }
+footer {
+    background-color: #1f1f1f;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
 
-        @media (max-width: 768px) {
-            #container {
-                width: 60%;
-            }
-        }
+footer img {
+    max-width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
 
-        @media (max-width: 480px) {
-            #container {
-                width: 90%;
-            }
-        }
+@media (max-width: 1024px) {
+    #container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 90%;
+    }
+
+    footer img {
+        max-width: 40px;
+    }
+}
